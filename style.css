@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
   --bg-primary: #222831;
   --color1: #3b4450;
@@ -8,7 +15,8 @@
   --aqua: #00ffff;
 }
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Inter, Arial, Helvetica, sans-serif;
@@ -29,7 +37,8 @@ header {
   padding: 1rem 2rem;
   text-align: center;
   margin-bottom: 50px;
-  box-shadow: 0px 10px 50px #171b21;
+  -webkit-box-shadow: 0px 10px 50px #171b21;
+          box-shadow: 0px 10px 50px #171b21;
 }
 
 header p {
@@ -41,15 +50,21 @@ header p {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: var(--color1);
   width: 60%;
   margin: 1rem auto;
   padding: 1rem 2rem;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 5px 10px #171b21;
+  -webkit-box-shadow: 0 5px 10px #171b21;
+          box-shadow: 0 5px 10px #171b21;
 }
 
 .container * {
@@ -69,11 +84,14 @@ header p {
   border: none;
   margin: 0 auto;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .button:hover {
-  box-shadow: 0px 0px 10px 2px var(--aqua);
+  -webkit-box-shadow: 0px 0px 10px 2px var(--aqua);
+          box-shadow: 0px 0px 10px 2px var(--aqua);
 }
 
 .sol-container {
@@ -129,6 +147,8 @@ input[type="checkbox"] {
   background-color: var(--bg-primary);
   margin: 0;
   border-radius: 60px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -140,8 +160,12 @@ input[type="checkbox"] {
   height: calc(100% - 10px);
   top: 50%;
   left: 5px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -157,6 +181,8 @@ input[type="checkbox"] {
 /* Solution 3 */
 
 .avatar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 50%;
@@ -168,13 +194,18 @@ input[type="checkbox"] {
   background-color: var(--aqua);
   color: var(--bg-primary);
   vertical-align: middle;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 7px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .avatar-container:hover {
-  box-shadow: 0px 0px 10px 2px var(--aqua);
+  -webkit-box-shadow: 0px 0px 10px 2px var(--aqua);
+          box-shadow: 0px 0px 10px 2px var(--aqua);
 }
 
 /* Solution 4 */
@@ -217,6 +248,7 @@ a#item5 {
 /* Solution 5 */
 
 fieldset {
+  display: -ms-grid;
   display: grid;
   padding: 1.5rem;
   border: 1px solid var(--aqua);
@@ -231,14 +263,20 @@ fieldset legend {
 }
 
 .form-sol5 label {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 3fr;
   grid-template-columns: 1fr 3fr;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   vertical-align: middle;
   font-weight: 300;
 }
 
 .form-sol5 input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   min-height: 2rem;
@@ -256,19 +294,23 @@ fieldset button[type="submit"] {
   background-color: transparent;
   border: 2px solid var(--aqua);
   border-radius: 7px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 fieldset button[type="submit"]:hover {
   color: var(--bg-primary);
   background-color: var(--aqua);
-  box-shadow: 0px 0px 10px 2px var(--aqua);
+  -webkit-box-shadow: 0px 0px 10px 2px var(--aqua);
+          box-shadow: 0px 0px 10px 2px var(--aqua);
 }
 
 fieldset input:focus {
   color: var(--bg-primary);
   background-color: var(--aqua);
-  box-shadow: 0px 0px 10px 2px var(--aqua);
+  -webkit-box-shadow: 0px 0px 10px 2px var(--aqua);
+          box-shadow: 0px 0px 10px 2px var(--aqua);
 }
 
 /* Solution 6 */
@@ -353,5 +395,6 @@ footer {
   padding: 20px;
   display: block;
   text-align: center;
-  box-shadow: 0px -10px 50px #171b21;
+  -webkit-box-shadow: 0px -10px 50px #171b21;
+          box-shadow: 0px -10px 50px #171b21;
 }
