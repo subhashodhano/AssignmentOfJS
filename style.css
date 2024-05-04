@@ -1,7 +1,6 @@
 :root {
   --bg-primary:  #222831;
   --color1: #3b4450;
-  /* --color1: #510A32; */
   --color2: #801336;
   --color3: #C72C41;
   --color4: #EE4540;
@@ -63,6 +62,8 @@ header p {
 
 .button {
   width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   min-height: 3rem;
   font-size: 1rem;
@@ -303,7 +304,14 @@ fieldset input:focus {
 
 
 .blur-anim-appear {
-  animation: blureffect1 0.3s ease-in-out;
+  -webkit-animation: blureffect1 0.3s ease-in-out;
+          animation: blureffect1 0.3s ease-in-out;
+}
+
+@-webkit-keyframes blureffect1 {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  
 }
 
 @keyframes blureffect1 {
@@ -313,7 +321,13 @@ fieldset input:focus {
 }
 
 .blur-anim-disappear {
-  animation: blureffect2 0.3s ease-in-out;
+  -webkit-animation: blureffect2 0.3s ease-in-out;
+          animation: blureffect2 0.3s ease-in-out;
+}
+
+@-webkit-keyframes blureffect2 {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 @keyframes blureffect2 {
