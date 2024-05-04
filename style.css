@@ -1,9 +1,9 @@
 :root {
-  --bg-primary:  #222831;
+  --bg-primary: #222831;
   --color1: #3b4450;
   --color2: #801336;
-  --color3: #C72C41;
-  --color4: #EE4540;
+  --color3: #c72c41;
+  --color4: #ee4540;
   --pri: #c1c1c1;
   --aqua: #00ffff;
 }
@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   font-family: Inter, Arial, Helvetica, sans-serif;
-
 }
 
 h3 {
@@ -21,17 +20,16 @@ h3 {
 body {
   background-color: var(--bg-primary);
   color: var(--pri);
-  
 }
 
 header {
-    background-color: var(--bg-primary);
-    font-size: 2rem;
-    width: 100%;
-    padding: 1rem 2rem;
-    text-align: center;
-    margin-bottom: 50px;
-    box-shadow: 0px 10px 50px #171b21;
+  background-color: var(--bg-primary);
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+  box-shadow: 0px 10px 50px #171b21;
 }
 
 header p {
@@ -40,7 +38,6 @@ header p {
   font-size: 1.5rem;
   font-weight: 300;
   padding: 15px 0px;
-  
 }
 
 .container {
@@ -53,7 +50,6 @@ header p {
   border: none;
   border-radius: 8px;
   box-shadow: 0 5px 10px #171b21;
-
 }
 
 .container * {
@@ -90,7 +86,7 @@ header p {
   height: auto;
   min-height: 200px;
   font-size: 2rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   padding: 20px;
   margin: 0;
   border: none;
@@ -106,7 +102,6 @@ header p {
   margin: 0;
   border: none;
   text-align: justify;
-
 }
 
 /* solution 2 */
@@ -119,9 +114,7 @@ header p {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
-  
 }
-
 
 input[type="checkbox"] {
   display: none;
@@ -140,7 +133,7 @@ input[type="checkbox"] {
 }
 
 .slider::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--color1);
   width: calc(50% - 5px);
@@ -150,7 +143,6 @@ input[type="checkbox"] {
   transform: translateY(-50%);
   border-radius: 50%;
   transition: all 0.3s;
-
 }
 
 #toggles:checked + .slider {
@@ -190,7 +182,6 @@ input[type="checkbox"] {
 .sol-container li {
   list-style-type: none;
   padding: 5px 10px;
-  
 }
 
 .sol-container li a {
@@ -205,7 +196,6 @@ input[type="checkbox"] {
 
 a#item1 {
   background-color: #00ffff;
-
 }
 
 a#item2 {
@@ -238,8 +228,6 @@ fieldset legend {
   padding-left: 10px;
   padding-right: 10px;
   font-weight: 300;
-
-  
 }
 
 .form-sol5 label {
@@ -248,7 +236,6 @@ fieldset legend {
   align-items: center;
   vertical-align: middle;
   font-weight: 300;
-
 }
 
 .form-sol5 input {
@@ -270,7 +257,6 @@ fieldset button[type="submit"] {
   border: 2px solid var(--aqua);
   border-radius: 7px;
   transition: all 0.3s;
-
 }
 
 fieldset button[type="submit"]:hover {
@@ -284,7 +270,6 @@ fieldset input:focus {
   background-color: var(--aqua);
   box-shadow: 0px 0px 10px 2px var(--aqua);
 }
-
 
 /* Solution 6 */
 
@@ -302,56 +287,65 @@ fieldset input:focus {
   opacity: 1;
 }
 
-
 .blur-anim-appear {
   -webkit-animation: blureffect1 0.3s ease-in-out;
-          animation: blureffect1 0.3s ease-in-out;
+  animation: blureffect1 0.3s ease-in-out;
 }
 
 @-webkit-keyframes blureffect1 {
-  from {opacity: 0;}
-  to {opacity: 1;}
-  
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes blureffect1 {
-  from {opacity: 0;}
-  to {opacity: 1;}
-  
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .blur-anim-disappear {
   -webkit-animation: blureffect2 0.3s ease-in-out;
-          animation: blureffect2 0.3s ease-in-out;
+  animation: blureffect2 0.3s ease-in-out;
 }
 
 @-webkit-keyframes blureffect2 {
-  from {opacity: 1;}
-  to {opacity: 0;}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes blureffect2 {
-  from {opacity: 1;}
-  to {opacity: 0;}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .dropdown {
-
   padding: 1rem;
   border-radius: 7px;
   background-color: transparent;
   border: 1px solid var(--aqua);
   color: var(--pri);
-
 }
 
 .dropdown:active {
   border: 1px solid var(--aqua);
-
 }
 
 footer {
-   
   font-size: 1rem;
   font-weight: 100;
   color: hsl(180, 100%, 40%);
